@@ -45,8 +45,8 @@ function Navbar() {
           ) : (
             <>
               {/* Left: Logo */}
-              <div style={{ flex: 1 }}>
-                <img src="/Logo.png" alt="logo" style={{ height: "40px" }} />
+              <div className="flex-1">
+                <img className="h-8 w-auto" src="/Logo.png" alt="logo" />
               </div>
 
               {/* Center: Menu Items */}
