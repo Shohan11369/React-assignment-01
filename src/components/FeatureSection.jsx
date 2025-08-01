@@ -23,6 +23,19 @@ function FeaturesSection() {
       desc: "Train an aiDR on an outbound patch, to nurture inbound leads, or to reach out to your long tail of SMB customers at renewal time.",
     },
   ];
+
+  const FeatureCard = ({ icon, title, desc }) => (
+    <Box className="flex flex-col gap-2">
+      <Box className="text-cyan-400">{icon}</Box>
+      <Typography variant="h6" component="h3" className="font-medium">
+        {title}
+      </Typography>
+      <Typography variant="body2" className="text-gray-300">
+        {desc}
+      </Typography>
+    </Box>
+  );
+
   return (
     <div className="bg-[#04232e] text-white py-16 px-6">
       <div className="max-w-7xl mx-auto">
