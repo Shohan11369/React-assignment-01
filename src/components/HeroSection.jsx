@@ -1,8 +1,9 @@
+// Herosection.jsx
 import React from "react";
 import { Button } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
-const Herosection = () => {
+function Herosection() {
   return (
     <div className="relative w-full h-[500px]">
       {/* Background Image */}
@@ -36,7 +37,6 @@ const Herosection = () => {
               padding: "4px 12px",
               borderRadius: "20px",
               margin: "4px",
-
               "&:hover": {
                 backgroundColor: "#3f41aa",
               },
@@ -48,6 +48,6 @@ const Herosection = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Herosection;
