@@ -98,12 +98,11 @@ function TestimonialCarousel() {
         ))}
       </div>
 
-      <div className="flex flex-col md:flex-row items-center justify-between w-full mt-6">
+      <div className="flex items-center justify-center gap-6 w-full mt-6">
         <IconButton
           aria-label="prev"
           onClick={prev}
           size="small"
-          className="mb-4 md:mb-0 md:ml-[-8px]"
           sx={{
             backgroundColor: "rgba(255,255,255,0.1)",
             color: "rgba(255,255,255,0.6)",
@@ -118,13 +117,10 @@ function TestimonialCarousel() {
           <ArrowBackIosNewIcon fontSize="small" />
         </IconButton>
 
-        <div className="flex-1" />
-
         <IconButton
           aria-label="next"
           onClick={next}
           size="small"
-          className="md:mr-[-8px]"
           sx={{
             backgroundColor: "rgba(255,255,255,0.1)",
             color: "rgba(255,255,255,0.6)",
