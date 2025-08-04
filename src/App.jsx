@@ -5,6 +5,7 @@ import Herosection from "./components/Herosection";
 import LogoSection from "./components/LogoSection";
 import FeatureSection from "./components/FeatureSection";
 import TrainingSection from "./components/TrainingSection";
+import TestimonialCarousel from "./components/TestimonialCarousel";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <LogoSection />
       <FeatureSection />
       <TrainingSection />
+      <TestimonialCarousel />
     </>
   );
 }
