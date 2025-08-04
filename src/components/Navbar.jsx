@@ -47,7 +47,7 @@ function Navbar() {
             <>
               {/* Left: Logo */}
               <div className="flex-1">
-                <img className="h-8 w-auto" src="/Logo.png" alt="logo" />
+                <img className="h-4 w-auto" src="/Logo.png" alt="logo" />
               </div>
 
               {/* Center: Menu Items */}
@@ -101,12 +101,26 @@ function Navbar() {
       <Drawer anchor="left" open={open} onClose={() => setOpen(false)}>
         <List sx={{ width: 200 }}>
           {menuItems.map((item) => (
-            <ListItem button key={item} onClick={() => setOpen(false)}>
+            <ListItem
+              component="button"
+              key={item}
+              onClick={() => setOpen(false)}
+              sx={{ textAlign: "left" }}
+            >
               <ListItemText primary={item} />
             </ListItem>
           ))}
 
-          <ListItem button onClick={() => setOpen(false)}>
+          <ListItem
+            component="button"
+            onClick={() => setOpen(false)}
+            sx={{
+              textAlign: "left",
+              width: "100%",
+              color: "inherit",
+              paddingY: 1,
+            }}
+          >
             <ListItemText primary="Sign Up" />
           </ListItem>
         </List>

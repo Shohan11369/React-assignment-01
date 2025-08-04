@@ -1,9 +1,9 @@
-// Herosection.jsx
+// HeroSection.jsx
 import React from "react";
 import { Button } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
-function Herosection() {
+function HeroSection() {
   return (
     <div className="relative w-full h-[500px]">
       {/* Background Image */}
@@ -50,4 +50,4 @@ function Herosection() {
   );
 }
 
-export default Herosection;
+export default HeroSection;

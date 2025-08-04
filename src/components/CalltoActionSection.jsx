@@ -40,7 +40,7 @@ function CallToActionSection() {
         {/* CTA Button */}
         <Button
           variant="contained"
-          className="!bg-cyan-400 !text-black !rounded-full !mt-4 px-6 py-2 normal-case text-sm hover:!bg-cyan-300 transition-all"
+          className="!bg-cyan-400 !text-black !rounded-full mt-4 px-6 py-2  text-sm hover:!bg-indigo-600 transition-all"
         >
           Sign Up for the Beta
         </Button>

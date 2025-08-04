@@ -2,7 +2,7 @@ import React from "react";
 import { Typography } from "@mui/material";
 
 function ImpactSection({
-  backgroundImage = "/public/Frame 18.png",
+  backgroundImage = "/Frame 18.png",
   stats = [
     { value: "32%", label: "Improvement in Open Rates" },
     { value: "75%", label: "Improvement in Ramp Time" },
