@@ -1,4 +1,3 @@
-import React from "react";
 import React, { useState, useEffect, useRef } from "react";
 import { Box, Typography, IconButton } from "@mui/material";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
@@ -44,11 +43,19 @@ function TestimonialCarousel() {
     setCurrent((prev) => (prev + 1) % length);
   };
   return (
-    <>
-      <div>
-        <h1>hello</h1>
+    <section className="w-full flex flex-col items-center justify-center relative bg-[#002228] text-white py-20 px-4">
+      <div className="relative max-w-3xl w-full flex flex-col items-center text-center">
+        <div className="flex items-center justify-center mb-4 w-[50px] h-[50px] rounded-full bg-[rgba(48,199,255,0.1)]">
+          <Typography
+            variant="h3"
+            component="div"
+            sx={{ color: "#30C7FF", fontWeight: 600, lineHeight: 1 }}
+          >
+            “
+          </Typography>
+        </div>
       </div>
-    </>
+    </section>
   );
 }
 
