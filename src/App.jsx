@@ -7,6 +7,7 @@ import FeatureSection from "./components/FeatureSection";
 import TrainingSection from "./components/TrainingSection";
 import TestimonialCarousel from "./components/TestimonialCarousel";
 import ImpactSection from "./components/ImpactSection";
+import CallToActionSection from "./components/CalltoActionSection";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <TrainingSection />
       <TestimonialCarousel />
       <ImpactSection />
+      <CallToActionSection />
     </>
   );
 }
