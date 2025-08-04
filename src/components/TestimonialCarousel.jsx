@@ -54,6 +54,32 @@ function TestimonialCarousel() {
             “
           </Typography>
         </div>
+        <Typography
+          variant="body1"
+          className="font-light leading-relaxed mb-4 px-2 sm:px-4 text-base md:text-lg max-w-[800px]"
+          sx={{ fontWeight: 300, lineHeight: 1.5 }}
+        >
+          {testimonials[current].quote}
+        </Typography>
+        variant="body1" className="font-light leading-relaxed mb-4 px-2 sm:px-4
+        text-base md:text-lg max-w-[800px]" sx=
+        {{ fontWeight: 300, lineHeight: 1.5 }}
+      </div>
+
+      {/* dots */}
+      <div className="flex gap-2 mt-8">
+        {testimonials.map((_, idx) => (
+          <div
+            key={idx}
+            onClick={() => {
+              clearTimeout(autoRef.current);
+              setCurrent(idx);
+            }}
+            className={`w-3 h-3 rounded-full cursor-pointer transition-transform duration-300 ${
+              idx === current ? "scale-110 bg-[#30C7FF]" : "bg-white/30"
+            }`}
+          ></div>
+        ))}
       </div>
     </section>
   );
